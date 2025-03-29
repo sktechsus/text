@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Delicious Food Delivery</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <h3>Burger</h3>
+            <p>Juicy grilled burger with fresh ingredients.</p>
+            <button onclick="orderNow('Burger')">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <h3>Pizza</h3>
+            <p>Cheesy and delicious pizza with various toppings.</p>
+            <button onclick="orderNow('Pizza')">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <h3>Biriyani</h3>
+            <p>Flavorful and aromatic biriyani with premium spices.</p>
+            <button onclick="orderNow('Biriyani')">Order Now</button>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@fooddelivery.com</p>
+        <p>Phone: 123-456-7890</p>
+    </section>
+    
+    <script>
+        function orderNow(item) {
+            alert('You have ordered a ' + item + '!');
+        }
+    </script>
+</body>
+</html>
